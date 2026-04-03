@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Microscope, Beaker, Globe, Search } from 'lucide-react';
+import Image from 'next/image'; // Image કમ્પોનન્ટ ઈમ્પોર્ટ કરો
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,14 +22,22 @@ const Navbar = () => {
           
           {/* Logo Section */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="bg-blue-600 p-1.5 rounded-lg text-white">
-                <Beaker size={24} />
-              </div>
-              <span className="text-xl font-bold text-slate-900 tracking-tight">
-                Kontazio Private Limited<span className="text-blue-600"></span>
-              </span>
-            </Link>
+           <Link href="/" className="flex items-center">
+  {/* અહીં નવો કોડ છે */}
+  <Image 
+    src="/Kontaziologo1.png" // તમારી ટ્રાન્સપરન્ટ PNG ફાઈલ
+    alt="Kontazio Logo"
+    width={160} // લોગોની પિક્સલ width (આને તમે વધારે-ઓછી કરી શકો છો)
+    height={100} // લોગોની પિક્સલ height
+    className="object-contain h-auto w-auto" // આનાથી રેશિયો જળવાઈ રહેશે
+    priority 
+  />
+  
+  {/* જો તમે બાજુમાં લખાણ પણ રાખવા માંગતા હોવ (જેમ પહેલા હતું), તો આને એક્ટિવ કરો, નહીંતર તેને કાઢી નાખો */}
+  {/* <span className="ml-3 text-xl font-bold text-slate-900 tracking-tight">
+    Kontazio <span className="text-blue-600">Private Limited</span>
+  </span> */}
+</Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -42,11 +51,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            
-            {/* CTA Button */}
-            {/* <button className="bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-md hover:shadow-lg">
-              Partner With Us
-            </button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -75,9 +79,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            {/* <button className="w-full mt-4 bg-blue-600 text-white px-5 py-3 rounded-lg text-base font-semibold">
-              Partner With Us
-            </button> */}
           </div>
         </div>
       )}
