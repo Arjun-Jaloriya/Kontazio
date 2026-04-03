@@ -22,7 +22,7 @@ export default function AboutPage() {
               <span className="text-blue-600">Inspired by Life.</span>
             </h1>
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              Founded in 2025, **Kontazio** started with a single mission: to make high-quality healthcare accessible to everyone. Over the last two decades, we have evolved from a local laboratory into a global pharmaceutical powerhouse.
+              Founded in 2020, **Kontazio** started with a single mission: to make high-quality healthcare accessible to everyone. Over the last two decades, we have evolved Raw Material, API from into a global pharmaceutical powerhouse.
             </p>
             <p className="text-slate-600 text-lg leading-relaxed">
               Today, we specialize in a wide range of therapeutic areas including Cardiology, Oncology, and Rare Diseases, impacting millions of lives across 40+ countries.

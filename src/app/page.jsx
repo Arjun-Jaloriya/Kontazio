@@ -25,7 +25,7 @@ export default function HomePage() {
               Innovating for a <span className="text-blue-400">Healthier</span> Tomorrow.
             </h1>
             <p className="text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
-              <strong className="text-white">Kontazio</strong> is a global pharmaceutical leader dedicated to high-quality medicine, cutting-edge R&D, and accessible healthcare solutions.
+              <strong className="text-white">Kontazio</strong> is a Empowering Pharmaceutical Manufacturing with Pure, High-Grade Raw Materials,API and finished formulation for a Healthier Tomorrow.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href={"/products"} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 transition-all shadow-lg shadow-blue-600/30">

@@ -67,7 +67,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">Email Address</h4>
-                    <p className="text-slate-600 text-sm mt-1">info@kontaziochem.com</p>
+                    <p className="text-slate-600 text-sm mt-1">kontazio.exports@gmail.com</p>
                     
                   </div>
                 </div>
