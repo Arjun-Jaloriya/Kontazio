@@ -10,6 +10,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://kontazio.com'),
   title: {
     default: "Kontazio Private Limited | Pharmaceutical & Regulatory Services",
     template: "%s | Kontazio",
